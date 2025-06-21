@@ -1,3 +1,4 @@
+from re import L
 import cv2
 
 import numpy as np
@@ -72,7 +73,7 @@ def interactive_edge_detection(image_path):
 
             # Sobel Edge Detection
 
-            sobelx = cv2.Sobel(l, cv2.CV_64F, 1, 0, ksize=3)
+            sobelx = cv2.Sobel(L, cv2.CV_64F, 1, 0, ksize=3)
 
             sobely = cv2.Sobel(gray_image, cv2.CV_64F, 0, 1, ksize=3)
 
